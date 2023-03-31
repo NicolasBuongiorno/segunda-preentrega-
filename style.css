@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    font-weight: 500;
+    font-size: 4em;
+}
+h2{
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+}
+nav{
+    background-color: rgb(165, 46, 46);
+    position: fixed;
+    width: 100%;
+    padding: 4px 20px;
+    border: double 10px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    }
+    nav ul{
+        list-style: none;
+        display: inline-block;
+        
+    }
+        nav ul li{
+            display: inline-block;
+            margin-right: 120px;
+            
+           
+        }
+            nav ul li a{
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+               font-size: 2em; 
+            }
+            nav ul li a:hover{
+                color: white;
+            }
+header img{
+    width: 100%;
+    height: 0%;
+}
+.bg-pattern{
+    background-image: url(../img/madera\ clara.png);
+    background-repeat: repeat;
+    
+}
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+
+p{
+    font-size: 1.5em;
+}
+footer{
+    background-color: rgb(165, 46, 46);
+}
+footer img{
+    width: 130px;
+    padding-left: 45px;
+    justify-content: center;
+}
+
+.center-p{
+    padding: center;
+}
+
+.left-p{
+    padding: left;
+}
+
+.alinear-p{
+    display: flex;
+
+}
+
+.right-p{
+    padding-right: 50px;
+}
+
+.foto-pizza{
+    width: 800;
+    height: 500;
+}
+
+.borde-foto{
+    border: double 10px;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    color: rgb(117, 10, 10); font-size: 1.5em; 
+    width: 200px;
+}
+
+form input{
+    font-size: 30px; background-color: rgb(216, 54, 54);
+}
+
+textarea{
+    background-color: rgb(216, 54, 54);
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    width: -100px;
+}
+
+
+.tamaño{
+    height: 96%;
+}
+
+
+
+/* empezamos con grids */
+
+.bg-rojo{
+    background-color: brown;
+}
+
+.tienda{
+    display: grid;
+    grid-template-columns: repeat( 20px 20px 20px);
+    grid-template-rows: repeat(50vh 50vh 50vh);
+    grid-template-areas: 
+    "especialidades especialidades especialidades"
+    "caprese cuatroquesos jym"
+    "caprese cuatroquesos jym";
+    gap: 50px;
+    
+}
+
+.especialidades{
+    grid-area: especialidades;
+    background-color: rgb(194, 206, 28);
+    border:ridge 10px brown;
+}
+
+
+.caprese{
+    grid-area: caprese;
+    background-color: rgb(194, 206, 28);
+    display: flex;
+    border: ridge 10px brown;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 30%;
+}
+
+.cuatroquesos{
+    grid-area: cuatroquesos;
+    background-color:rgb(194, 206, 28);
+    display: flex;
+    border: ridge 10px brown;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 15%;
+}
+
+.jym{
+    grid-area: jym;
+    background-color: rgb(194, 206, 28);
+    display: flex;border: ridge 10px brown;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.video{
+    display: flex;
+    justify-content:center;
+    background-color: rgb(71, 182, 76);
+}
+
+.p{
+    margin-top: 50px;
+    margin-right: 60px;
+}
+
+.a{
+    border: double;
+}
+
+
+
+
+
+
+@media(max-width:768px){
+    .tienda{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+    "especialidades"
+    "caprese"
+    "cuatroquesos"
+    "jym";
+ }
+}
+
+ @media(max-width:768px){
+    .sobrenosotros{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    "sobrenosotros"
+    "texto"
+    "video";
+}
+
+
+
+ .tienda div{
+    padding: 10px 0;
+    margin: 0 20%;
+    justify-items: center;
+
+ }
+    
+}
+
+.navegador{
+    display: flex;
+    width: 100%;
+}
+
+.navegador-ul{
+    list-style: none;
+    display: inline-block;
+}
+
+
+.navegador-ul-li{
+    display: inline-block;
+    margin-right: 120px;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.navegador-ul-li-a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+}
+
+.nav-color:hover{
+    color: white;
+}
+
+
+
