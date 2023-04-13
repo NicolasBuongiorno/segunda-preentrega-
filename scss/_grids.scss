@@ -1,0 +1,48 @@
+.tienda{
+    display: grid;
+    grid-template-columns: repeat( 20px 20px 20px);
+    grid-template-rows: repeat(50vh 50vh 50vh);
+    grid-template-areas: 
+    "especialidades especialidades especialidades"
+    "caprese cuatroquesos jym"
+    "caprese cuatroquesos jym";
+    gap: 50px;
+    
+    
+}
+
+.especialidades{
+    grid-area: especialidades;
+    background-color: $secondaryColor;
+    border:ridge 10px $mainColor;
+}
+
+
+.caprese{
+    grid-area: caprese;
+    background-color: $secondaryColor;
+    display: flex;
+    border: ridge 10px $mainColor;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 30%;
+}
+
+.cuatroquesos{
+    grid-area: cuatroquesos;
+    background-color: $secondaryColor;
+    display: flex;
+    border: ridge 10px $mainColor;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 15%;
+}
+
+.jym{
+    grid-area: jym;
+    background-color: $secondaryColor;
+    display: flex;border: ridge 10px $mainColor;
+    flex-direction: column;
+    width: 50%;
+
+}

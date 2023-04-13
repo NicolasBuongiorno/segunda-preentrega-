@@ -1,0 +1,33 @@
+// anidacion
+
+nav{
+    background-color: $mainColor;
+    position: fixed;
+    width: 100%;
+    padding: 4px 20px;
+    border: double 10px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    }
+
+.botonera{
+    ul{
+        list-style: none;
+        display: inline-block;
+           
+        li{display: inline-block;
+            margin-right: 120px;
+            
+                a{
+                    color: $tercerColor;
+                    text-decoration: none;
+                    display: inline-block;
+                   font-size: $textSm;  
+                }
+                &:hover{
+                    color: $hovercolor;
+                }
+             }
+    }
+}
