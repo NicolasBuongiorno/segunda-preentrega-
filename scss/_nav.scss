@@ -10,8 +10,8 @@ nav{
     display: flex;
     align-items: center;
     }
-
-.botonera{
+    
+    .botonera{
     ul{
         list-style: none;
         display: inline-block;
@@ -31,3 +31,34 @@ nav{
              }
     }
 }
+
+.navegador-ul{
+    list-style: none;
+    display: inline-block;
+}
+
+
+.navegador-ul-li{
+    display: inline-block;
+    margin-right: 120px;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.navegador-ul-li-a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $textP
+}
+
+.nav-color:hover{
+    color: white;
+}
+
+
+
